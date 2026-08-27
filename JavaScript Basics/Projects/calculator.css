@@ -7,12 +7,30 @@
 }
 
 .mybtn{
-    background-color: antiquewhite;
+    background-color: rgb(164, 238, 110);
     padding: 5px;
     font-size: 25px;
     font-weight: bold;
     width: 50px;
-    border: 3px solid brown;
-    margin: 5px;
+    border: 3px solid rgba(252, 57, 3, 0.773);
+    margin: 3px;
+    border-radius: 15px;
+}
+
+#display{
+    width: 97%;
+    border: 3px solid rgb(22, 41, 244);
+    border-radius: 10px;
+    font-size: 25px;
+    font-weight: bolder;
+    height: 40px;
+}
+
+#btn-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 

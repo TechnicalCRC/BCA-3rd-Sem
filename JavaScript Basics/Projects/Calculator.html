@@ -8,14 +8,46 @@
 </head>
 <body>
     <h1>Basic Calculator</h1>
-    
+    <hr>
     <div id="main-container">
-        <input type="text" id="">
+        <input type="text" id="display" readonly>
         <div id="btn-container">
-            <button class="mybtn">C</button>
-            <button class="mybtn">1</button>
-            <button class="mybtn">2</button>
+            <button class="mybtn" style="color: red;" onclick="display.value = '';">C</button>
+            <button class="mybtn" onclick=" display.value += '1'; ">1</button>
+            <button class="mybtn" onclick="display.value += '2';">2</button>
+            <button class="mybtn" onclick="display.value += '3';">3</button>
+            <button class="mybtn" onclick="display.value += '+';">+</button>
+            <button class="mybtn" onclick="display.value += '4';">4</button>
+            <button class="mybtn" onclick="display.value += '5';">5</button>
+            <button class="mybtn" onclick="display.value += '6';">6</button>
+            <button class="mybtn" onclick="display.value += '-';">-</button>
+            <button class="mybtn" onclick="display.value += '7';">7</button>
+            <button class="mybtn" onclick="display.value += '8';">8</button>
+            <button class="mybtn" onclick="display.value += '9';">9</button>
+            <button class="mybtn" onclick="display.value += '*';">*</button>
+            <button class="mybtn" onclick="display.value += '/';">/</button>
+            <button class="mybtn" onclick="display.value += '0';">0</button>
+            <button class="mybtn" onclick="display.value += '.';">.</button>
+            <button class="mybtn" onclick="display.value += '**';">**</button>
+            <button class="mybtn" style="color: red;" 
+            onclick="
+            let text = display.value;
+           // text = text.slice(0,-1);
+            text = text.substr(0, text.length-1);
+            display.value = text;"> X </button>
+ 
+           <button class="mybtn"
+             onclick="
+             let exp = display.value;
+             let result = eval(exp);
+             display.value = result;">=</button>
         </div>
     </div>
+
+    <script>
+        let display = document.getElementById('display');
+        let data = "";
+        display.value = data;
+    </script>
 </body>
 </html>
