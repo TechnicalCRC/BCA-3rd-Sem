@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <script>let flag=0;</script>
+    <img src="pics/switch-off.jfif" id="img2" alt="" width="100px" onclick="
+    if(flag == 0)    {
+      flag = 1;
+      document.getElementById('img1').src = 'pics/Bulb-on.avif';
+      document.getElementById('img2').src = 'pics/switch-on.jfif'; 
+     }  else if(flag == 1) {
+      flag = 0;
+      document.getElementById('img1').src = 'pics/Bulb-off.avif';
+      document.getElementById('img2').src = 'pics/switch-off.jfif'; 
+     } ">
+    <br>
+ <button onclick="document.getElementById('img1').src = 'pics/Bulb-on.avif'; ">Bulb On</button>
+ 
+ <img id="img1" src="pics/Bulb-off.avif" width="200px">
+ 
+ <button onclick=" document.getElementById('img1').src = 'pics/Bulb-off.avif'; ">Bulb Off</button>   
+</body>
+</html>
