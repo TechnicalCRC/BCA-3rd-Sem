@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>For Loop</h1>
+    <h1>Table</h1>
+    <hr />
+    <input type="text" id="txt1" placeholder="Enter a number here" />
+    <button onclick="table()">Generate Table</button>    <hr />
+    <h3 id="p1"></h3>
+    <script>
+      function table() {
+        let num = Number(document.getElementById("txt1").value);
+        let result = "";
+        for (let i = 1; i <= 10; i++) {
+          result += `${num} x ${i} = ${num * i} <br>`;
+        }
+        document.getElementById("p1").innerHTML = result;
+      }
+      // console.log(`${num} x ${i} = ${num*i}`);
+      //      console.log(num + ' x ' + i + ' = ' + (num*i));
+    </script>
+    <script>
+//      for loop
+      let a;
+      for (a = 1; a < 11; a++)
+      {
+        console.log(a)
+       if(a==5)  continue;
+      }
+    </script>
+  </body>
+</html>
