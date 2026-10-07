@@ -10,30 +10,88 @@
     <script>
       // Normal Function -
       // 1. without parameter without return
-      function show() {
-        console.log("This is show()");
-      }
-      show();
+    //   function show() {
+    //     console.log("This is show()");
+    //   }
+    //   show();
 
-      // 2. with parameter without return
-      function add(a, b) {
-        console.log("add is " + (a + b));
-      }
-      add(4, 5);
+    //   // 2. with parameter without return
+    //   function add(a, b) {
+    //     console.log("add is " + (a + b));
+    //   }
+    //   add(4, 5);
 
-      // 3. without parameter with return
-      function sub() {
-        let a = 5, b = 10;
-        return(a - b);
-      }
-     console.log("Sub is " +sub());
+    //   // 3. without parameter with return
+    //   function sub() {
+    //     let a = 5, b = 10;
+    //     return(a - b);
+    //   }
+    //   let s = sub();
+    //  console.log("Sub is " + sub());
 
-    // 4. with parameter with return
-      function mul(a, b) {
-       return a*b;
-      }
-      console.log("Multiply is "+mul(4,7))
+    // // 4. with parameter with return
+    //   function mul(a, b) {
+    //    return a*b;
+    //   }
+    //   console.log("Multiply is "+mul(4,7))
 
-    </script>
+
+// function expresion
+//   show();
+//    function show() {
+//         console.log("This is show()");
+//       }
+//       show();
+//     //  console.log(show)
+//     let print = function( x){
+//         console.log('In print() ' + x);
+//         console.log('Next statement.....');
+//       }
+//     print(23, 8);
+//     document.write(print); // callback function
+//   let a = 10;
+//   console.log(a);
+
+// //  console.log(mul(4,6));
+//   let mul = function(a,b){
+//     return a*b
+//   }
+//   console.log(" mul is " + mul(7,4));
+//   console.log(mul)
+//   console.log(mul())
+
+// parameters in function
+
+// let add = function (a=0, b=0 ){
+//   console.log(a,b)
+// //  if(b == undefined ) b = 0;
+//   console.log(('Add is ' + (a+b)));
+// }
+// add()
+// add(3);
+// add(3,7);
+
+
+let add = function(...ar){
+  let sum = 0;
+  console.log('Array Values:')
+  for(let i of ar)
+   sum += i;
+  console.log("sum = " + sum)
+}
+add(1);
+add(1,2);
+add(1,2,3);
+add(1,2,3,4);
+add(1,2,3,4,5);
+add();
+
+
+let sayh = function(x,y){ // y - undefined
+  console.log(y)
+  console.log('Hello ' + x[1]);
+}
+sayh(['Reena', 'Hemant']); // anonymous array
+</script>
   </body>
 </html>
